@@ -1,0 +1,155 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-28T08:26:00.044Z",
+        "line": 3,
+        "name": "Validate google search is working",
+        "description": "",
+        "id": "feature-to-test-google-search-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The driver executable does not exist: E:\\Eclipses\\Demo\\CucumberJava\\src\\test\\resources\\drivers\\chromedriver.exe\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:589)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:154)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:36)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:195)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:389)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:118)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:105)\r\n\tat StepsDefinitions.GoogleSearchSteps.browser_is_open(GoogleSearchSteps.java:28)\r\n\tat ✽.browser window is open(file:///E:/Eclipses/Demo/CucumberJava/src/test/resources/Features/GoogleSeatch.feature:4)\r\n",
+              "duration": 64961400,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "browser window is open",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearchSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999400,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on google search page",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearchSteps.user_is_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters a text in search box",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearchSteps.user_enters_a_text_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1997800,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "hits enter",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearchSteps.hits_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998600,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user is navigated to search results",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearchSteps.user_is_navigated_to_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google search functionality",
+    "description": "",
+    "id": "feature-to-test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoogleSeatch.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-28T08:26:00.233Z",
+        "line": 3,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1999700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test login functionality",
+    "description": "",
+    "id": "feature-to-test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  }
+]
